@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Write your age">
+
+        <br><br>
+
+        <label>Designation</label>
+        <div>
+            <label>
+                <input type="radio" name="designation" value="student"> Student
+            </label>
+            <label>
+                <input type="radio" name="designation" value="teacher"> Teacher
+            </label>
+        </div>
+
+        <br>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <button type="submit">Submit</button>
+    </div>
+
+    <script>
+        let submitButton = document.querySelector("button");
+
+        submitButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            console.log("form submitted");
+        });
+    </script>
+</body>
+</html>
